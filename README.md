@@ -1,9 +1,9 @@
 # go-app
 
-run following command to start golang server
+docker build . -t sweta8625/assignment3
 
-```
-go run main.go
-```
+docker run -p 8080:8080 -d sweta8625/assignment3
 
-open browser and hit `localhost:8080` ,you should see `hello` message
+curl http://localhost:8080
+
+docker push sweta8625/assignment3
